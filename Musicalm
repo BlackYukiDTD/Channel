@@ -1,0 +1,28 @@
+var obj = JSON.parse($response.body);
+
+obj= {
+  "success" : true,
+  "errorCode" : null,
+  "data" : {
+    "subscriptions" : [
+      {
+        "cancellationDateTime" : null,
+        "isRefunded" : 0,
+        "isActive" : 1,
+        "id" : 65876,
+        "productCode" : "musicalm.subscription.annual",
+        "storeOrderId" : "120000677608351",
+        "inTrialPeriod" : 0,
+        "inGracePeriod" : 0,
+        "inPremiumPeriod" : 1,
+        "expiresDateTime" : "2099-11-07 17:00:21"
+      }
+    ],
+    "products" : [
+
+    ]
+  },
+  "errorMessage" : null
+};
+
+$done({body: JSON.stringify(obj)});
